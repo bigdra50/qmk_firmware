@@ -25,10 +25,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Tab    |   Q  |   W  |   E  |   R  |   T  |  [   |           |  ]   |   Y  |   U  |   I  |   O  |   P  |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | BkSp   |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |   ;  |   '    |
- * |--------+------+------+------+------+------|   B  |           |   B  |------+------+------+------+------+--------|
+ * |--------+------+------+------+------+------|   6  |           |   6  |------+------+------+------+------+--------|
  * |   L1   |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |//Ctrl|   L2   |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  `~  |  '"  |AltShf|  Alt |   [  |                                       |   ]  |  Alt |   [  |   ]  |   =  |
+ *   |  `~  |  '"  |AltShf|  Alt | Copy |                                       | Paste|  Alt |   [  |   ]  |   =  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | LGUI | App  |       | Alt  | SGUI |
@@ -43,8 +43,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_GRV,    KC_1,        KC_2,          KC_3,    KC_4,    KC_5,    KC_6,                 KC_6,       KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS,        KC_EQL,
   KC_TAB,    KC_Q,        KC_W,          KC_E,    KC_R,    KC_T,    KC_LBRC,             KC_RBRC,   KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,           KC_BSLS,
   KC_BSPC,   KC_A,        KC_S,          KC_D,    KC_F,    KC_G,                                      KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,        KC_QUOT,
-  MO(SYMB),  CTL_T(KC_Z), KC_X,          KC_C,    KC_V,    KC_B,    KC_B,                 KC_B,       KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_T(KC_SLSH), MO(MDIA),
-  KC_GRV,    KC_QUOT,     LALT(KC_LSFT), KC_LALT, KC_LBRC,                                            KC_RBRC, KC_LALT, KC_LBRC, KC_RBRC, KC_EQL,
+  MO(SYMB),  CTL_T(KC_Z), KC_X,          KC_C,    KC_V,    KC_B,    KC_6,                 KC_6,       KC_N,    KC_M,    KC_COMM, KC_DOT,  CTL_T(KC_SLSH), MO(MDIA),
+  KC_GRV,    KC_QUOT,     LALT(KC_LSFT), KC_LALT, KC_COPY,                                            KC_PASTE, KC_LALT, KC_LBRC, KC_RBRC, KC_EQL,
                                                          KC_LGUI,   ALT_T(KC_APP),          KC_LALT, SGUI_T(KC_LGUI),
                                                                     KC_HOME,                KC_INS,
                                                          KC_LSFT, KC_BSPC, KC_ESC,          KC_TAB,  KC_ENT, KC_SPC
